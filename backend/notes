@@ -1,0 +1,1 @@
+Connect to Ubuntu:  ssh -i ~/.ssh/id_rsa root@104.131.181.139
