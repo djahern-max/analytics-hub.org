@@ -1,3 +1,4 @@
+notes.txt
 # Environment variables
 .env
 .env.*
@@ -36,6 +37,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /frontend/build/
+
+# Deployment
+deploy.sh
+build.zip
 
 # Misc
 .DS_Store
