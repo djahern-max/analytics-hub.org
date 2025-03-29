@@ -14,6 +14,7 @@ import OAuthCallback from './components/Auth/OAuthCallback';
 // Public Pages
 import HomePage from './components/Home/HomePage';
 import NotFoundPage from './components/Common/NotFoundPage';
+import MissionPage from './components/Home/MissionPage'; // Add this import
 
 // Protected Pages
 import ProtectedRoute from './components/Common/ProtectedRoute';
@@ -21,7 +22,6 @@ import DashboardPage from './components/Dashboard/DashboardPage';
 import WebsiteList from './components/Websites/WebsiteList';
 import WebsiteForm from './components/Websites/WebsiteForm';
 import WebsiteDetail from './components/Websites/WebsiteDetail';
-
 // Create theme
 const theme = createTheme({
   palette: {
@@ -79,6 +79,7 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/oauth-callback" element={<OAuthCallback />} />
+              <Route path="/our-mission" element={<MissionPage />} /> {/* Add this new route */}
 
               {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>

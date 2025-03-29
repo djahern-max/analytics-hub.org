@@ -6,29 +6,29 @@ import styles from './CharityCarousel.module.css';
 
 const charities = [
     {
-        name: 'DonorsChoose',
+
         description: 'U.S. education',
         logo: '/images/charities/donorschoose.png',
     },
     {
-        name: 'Pratham',
+
         description: 'Global child education',
         logo: '/images/charities/pratham.png',
     },
     {
-        name: 'Luminos Fund',
+
         description: 'Out-of-school children',
         logo: '/images/charities/luminos.png',
     },
     {
-        name: 'Street Child',
+
         description: 'Education in crisis zones',
         logo: '/images/charities/streetchild.png',
     },
     {
-        name: 'Save the Children',
+
         description: 'Learning gap support',
-        logo: '/images/charities/savethechildren.png', // Make sure this matches exactly
+        logo: '/images/charities/savethechildren.png',
     },
 ];
 
@@ -52,7 +52,7 @@ const CharityCarousel = () => {
                                 className={styles.logo}
                                 onError={(e) => {
                                     console.error(`Failed to load image: ${charity.logo}`);
-                                    e.target.src = `https://placehold.co/100x100?text=${encodeURIComponent(charity.name)}`;
+                                    e.target.src = `https://placehold.co/150x150?text=${encodeURIComponent(charity.name)}`;
                                 }}
                             />
                             <h3 className={styles.charityName}>{charity.name}</h3>

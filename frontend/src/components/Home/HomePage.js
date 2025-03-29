@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import CharityCarousel from './CharityCarousel';
+import DashboardPlaceholder from './DashboardPlaceholder';
 
 const HomePage = () => {
     return (
@@ -93,7 +94,8 @@ const HomePage = () => {
                     <p>Monitor your website traffic while getting intelligent suggestions to improve performance</p>
 
                     <div className={styles.imageContainer}>
-                        <img src="/images/dashboard-preview.png" alt="Analytics Hub Dashboard" />
+                        <DashboardPlaceholder />
+                        {/* <img src="/images/dashboard-preview.png" alt="Analytics Hub Dashboard" /> */}
                     </div>
                 </div>
             </section>
@@ -107,12 +109,25 @@ const HomePage = () => {
                 <div className={styles.container}>
                     <h2>Analytics for Good</h2>
                     <p className={styles.missionStatement}>
-                        Analytics Hub is committed to making a positive impact. We donate 100% of our profits to charitable organizations focused on [your cause areas - e.g., education, environmental protection, digital privacy rights].
+                        Analytics Hub is committed to making a positive impact. We donate 100% of our profits to charitable organizations focused on education and child development. From supporting U.S. classrooms through DonorsChoose to helping children in crisis zones with Street Child, every subscription helps build a brighter future for children worldwide.
                     </p>
+                    <div className={styles.missionHighlights}>
+                        <div className={styles.missionStat}>
+                            <span className={styles.missionNumber}>5</span>
+                            <span className={styles.missionLabel}>Education charities</span>
+                        </div>
+                        <div className={styles.missionStat}>
+                            <span className={styles.missionNumber}>100%</span>
+                            <span className={styles.missionLabel}>Of profits donated</span>
+                        </div>
+                        <div className={styles.missionStat}>
+                            <span className={styles.missionNumber}>20+</span>
+                            <span className={styles.missionLabel}>Countries impacted</span>
+                        </div>
+                    </div>
                     <Link to="/our-mission" className={styles.button}>Learn more about our mission</Link>
                 </div>
             </section>
-
             {/* Pricing Section */}
             <section className={styles.pricing}>
                 <div className={styles.container}>
@@ -152,7 +167,7 @@ const HomePage = () => {
                                 <li>Premium AI insights</li>
                                 <li>Unlimited websites</li>
                                 <li>Unlimited team members</li>
-                                <li>Priority support</li>
+
                             </ul>
                             <Link to="/register" className={styles.button}>Get started</Link>
                         </div>

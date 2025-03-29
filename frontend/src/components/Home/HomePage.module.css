@@ -312,9 +312,9 @@
 .donationStatement {
     text-align: center;
     padding: 2rem;
-    background-color: #f0f7ff;
+    background-color: transparent;
     border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
 }
 
 .donationStatement h2 {
@@ -391,6 +391,34 @@
     margin-bottom: 0.5rem;
 }
 
+.missionHighlights {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.missionStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.missionNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3B82F6;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.missionLabel {
+    font-size: 0.9rem;
+    color: #5a6072;
+    max-width: 150px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .heroContent {
@@ -420,5 +448,10 @@
 
     .pricingCards {
         grid-template-columns: 1fr;
+    }
+
+    .missionHighlights {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
