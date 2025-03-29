@@ -1,7 +1,8 @@
 // components/Home/HomePage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './HomePage.module.css'; // We'll create this CSS module
+import styles from './HomePage.module.css';
+import CharityCarousel from './CharityCarousel';
 
 const HomePage = () => {
     return (
@@ -39,13 +40,19 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className={styles.heroRight}>
                             <div className={styles.donationStatement}>
-                                <h2><span className={styles.percent}>100%</span> <span className={styles.profits}>PROFITS</span> <span className={styles.donated}>DONATED</span></h2>
-                                <p>PRIVACY-FOCUSED ANALYTICS FOR SOCIAL GOOD</p>
+                                <h2>
+                                    <span className={styles.percent}>100%</span> of <span className={styles.profits}>PROFITS</span> <span className={styles.donated}>DONATED</span>
+                                </h2>
+                                <p>Every dollar of profit goes directly to these 5 life-changing charities:</p>
+
+                                {/* Just drop in the carousel directly */}
+                                <CharityCarousel />
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </header>

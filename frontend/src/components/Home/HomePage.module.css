@@ -379,7 +379,18 @@
     background-color: #2563eb;
 }
 
-å
+.charityList {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #5a6072;
+}
+
+.charityList li {
+    margin-bottom: 0.5rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .heroContent {
