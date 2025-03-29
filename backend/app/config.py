@@ -9,13 +9,13 @@ load_dotenv()
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Analytics Hub"
     API_V1_STR: str = "/api"
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "your_secret_key_here")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "2546573234657")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
     # Database - Use SQLite for development
     DATABASE_URL: str = os.getenv(
-        "DATABASE_URL", "postgresql://postgres:password@localhost/analytics_hub"
+        "DATABASE_URL", "postgresql://postgres:Guitar0123@localhost/analytics_hub"
     )
 
     # Frontend URL for redirects
